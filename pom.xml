@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.future.lvtumall</groupId>
+    <artifactId>lvtumall</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>lvtumall</name>
+    <description>聚合服务</description>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>lvtumall-common</module>
+        <module>lvtumall-coupon</module>
+        <module>lvtumall-gateway</module>
+        <module>lvtumall-member</module>
+        <module>lvtumall-order</module>
+        <module>lvtumall-product</module>
+        <module>lvtumall-third-party</module>
+        <module>lvtumall-ware</module>
+        <module>lvtumall-search</module>
+        <module>renren-generator</module>
+        <module>lvtumall-common</module>
+        <module>lvtumall-third-party</module>
+        <module>lvtumall-search</module>
+        <module>lvtumall-auth-server</module>
+        <module>lvtumall-cart</module>
+        <module>lvtumall-test-sso-client</module>
+        <module>lvtumall-test-sso-server</module>
+        <module>lvtumall-seckill</module>
+    </modules>
+
+
+</project>
