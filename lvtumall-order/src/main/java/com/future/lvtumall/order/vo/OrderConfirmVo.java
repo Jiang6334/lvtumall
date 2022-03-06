@@ -10,7 +10,7 @@ import java.util.Map;
 /**
  * @Description: 订单确认页需要用的数据
  * @Created: with IntelliJ IDEA.
- * @author: 夏沫止水
+ * @author: aya
  * @createTime: 2020-07-02 18:59
  **/
 

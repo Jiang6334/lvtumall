@@ -12,12 +12,12 @@ import javax.servlet.http.HttpServletRequest;
 /**
  * @Description: feign拦截器功能
  * @Created: with IntelliJ IDEA.
- * @author: 夏沫止水
+ * @author: aya
  * @createTime: 2020-07-02 21:10
  **/
 
 @Configuration
-public class LvtuFeignConfig {
+class LvtuFeignConfig {
 
     @Bean("requestInterceptor")
     public RequestInterceptor requestInterceptor() {

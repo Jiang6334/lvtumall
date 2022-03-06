@@ -34,7 +34,7 @@ import static com.future.common.constant.AuthServerConstant.LOGIN_USER;
 /**
  * @Description:
  * @Created: with IntelliJ IDEA.
- * @author: 夏沫止水
+ * @author: aya
  * @createTime: 2020-06-24 10:37
  **/
 

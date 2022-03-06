@@ -52,8 +52,8 @@
 
 	<dependencies>
 		<dependency>
-			<groupId>com.atguigu.gulimall</groupId>
-			<artifactId>gulimall-common</artifactId>
+			<groupId>com.future.lvtumall</groupId>
+			<artifactId>lvtumall-common</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 		<dependency>

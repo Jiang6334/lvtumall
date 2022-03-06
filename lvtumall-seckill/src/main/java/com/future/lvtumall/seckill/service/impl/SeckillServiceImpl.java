@@ -1,9 +1,9 @@
 package com.future.lvtumall.seckill.service.impl;
 
-import com.alibaba.csp.sentinel.Entry;
-import com.alibaba.csp.sentinel.SphU;
-import com.alibaba.csp.sentinel.annotation.SentinelResource;
-import com.alibaba.csp.sentinel.slots.block.BlockException;
+//import com.alibaba.csp.sentinel.Entry;
+//import com.alibaba.csp.sentinel.SphU;
+//import com.alibaba.csp.sentinel.annotation.SentinelResource;
+//import com.alibaba.csp.sentinel.slots.block.BlockException;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.TypeReference;
 import com.baomidou.mybatisplus.core.toolkit.IdWorker;
@@ -38,7 +38,7 @@ import java.util.stream.Collectors;
 /**
  * @Description:
  * @Created: with IntelliJ IDEA.
- * @author: 夏沫止水
+ * @author: aya
  * @createTime: 2020-07-09 19:29
  **/
 
@@ -169,11 +169,11 @@ public class SeckillServiceImpl implements SeckillService {
      * 获取到当前可以参加秒杀商品的信息
      * @return
      */
-    @SentinelResource(value = "getCurrentSeckillSkusResource",blockHandler = "blockHandler")
+//    @SentinelResource(value = "getCurrentSeckillSkusResource",blockHandler = "blockHandler")
     @Override
     public List<SeckillSkuRedisTo> getCurrentSeckillSkus() {
 
-        try (Entry entry = SphU.entry("seckillSkus")) {
+        try /*(Entry entry = SphU.entry("seckillSkus"))*/ {
             //1、确定当前属于哪个秒杀场次
             long currentTime = System.currentTimeMillis();
 
@@ -208,14 +208,14 @@ public class SeckillServiceImpl implements SeckillService {
                     break;
                 }
             }
-        } catch (BlockException e) {
+        } catch (Exception e) {
             log.error("资源被限流{}",e.getMessage());
         }
 
         return null;
     }
 
-    public List<SeckillSkuRedisTo> blockHandler(BlockException e) {
+    public List<SeckillSkuRedisTo> blockHandler(Exception e) {
 
         log.error("getCurrentSeckillSkusResource被限流了,{}",e.getMessage());
         return null;

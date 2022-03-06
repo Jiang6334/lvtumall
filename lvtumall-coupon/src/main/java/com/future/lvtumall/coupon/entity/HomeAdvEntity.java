@@ -10,7 +10,7 @@ import java.util.Date;
 /**
  * 首页轮播广告
  * 
- * @author 夏沫止水
+ * @author aya
  * @email HeJieLin@lvtumall.com
  * @date 2020-05-22 19:35:30
  */

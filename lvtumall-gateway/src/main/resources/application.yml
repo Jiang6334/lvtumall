@@ -4,7 +4,7 @@ spring:
     sentinel:
       transport:
         #配置sentinel dashboard地址
-        dashboard: localhost:8080
+        dashboard: 39.105.108.186:8858
 
     gateway:
       routes:
@@ -17,6 +17,10 @@ spring:
 #          uri: https://www.qq.com
 #          predicates:
 #            - Query=uri,qq
+#        - id: lvtumall_host_route
+#          uri: lb://lvtumall-product
+#          predicates:
+#            - Host=**.lvtumall.com
 
         - id: product_route
           uri: lb://lvtumall-product

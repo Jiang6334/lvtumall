@@ -21,6 +21,7 @@
         <module>lvtumall-ware</module>
         <module>lvtumall-search</module>
         <module>renren-generator</module>
+        <module>renren-fast</module>
         <module>lvtumall-common</module>
         <module>lvtumall-third-party</module>
         <module>lvtumall-search</module>

@@ -3,7 +3,7 @@ package com.future.lvtumall.search.constant;
 /**
  * @Description:
  * @Created: with IntelliJ IDEA.
- * @author: 夏沫止水
+ * @author: aya
  * @createTime: 2020-06-06 16:58
  **/
 public class EsConstant {

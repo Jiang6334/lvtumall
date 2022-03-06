@@ -1,7 +1,7 @@
 <template> 
   <div>
     <el-upload
-      action="http://lvtumall-clouds.oss-cn-beijing.aliyuncs.com"
+      action="http://lvtumall.oss-cn-beijing.aliyuncs.com"
       :data="dataObj"
       list-type="picture"
       :multiple="false" :show-file-list="showFileList"

@@ -3,7 +3,7 @@ package com.future.common.exception;
 /**
  * @Description: 错误状态码枚举
  * @Created: with IntelliJ IDEA.
- * @author: 夏沫止水
+ * @author: aya
  * @createTime: 2020-05-27 17:29
  *
  * 错误码和错误信息定义类

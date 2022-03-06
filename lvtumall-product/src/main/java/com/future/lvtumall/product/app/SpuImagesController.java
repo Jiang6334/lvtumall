@@ -20,7 +20,7 @@ import com.future.common.utils.R;
 /**
  * spu图片
  *
- * @author 夏沫止水
+ * @author aya
  * @email HeJieLin@lvtumall.com
  * @date 2020-05-22 19:00:18
  */

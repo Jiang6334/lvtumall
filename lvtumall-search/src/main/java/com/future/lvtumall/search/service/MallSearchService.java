@@ -6,7 +6,7 @@ import com.future.lvtumall.search.vo.SearchResult;
 /**
  * @Description:
  * @Created: with IntelliJ IDEA.
- * @author: 夏沫止水
+ * @author: aya
  * @createTime: 2020-06-13 14:17
  **/
 public interface MallSearchService {

@@ -11,7 +11,7 @@ import java.io.IOException;
 /**
  * @Description:
  * @Created: with IntelliJ IDEA.
- * @author: 夏沫止水
+ * @author: aya
  * @createTime: 2020-06-11 09:39
  **/
 
@@ -27,7 +27,7 @@ public class MyRedissonConfig {
     public RedissonClient redissonClient() throws IOException {
         //1、创建配置
         Config config = new Config();
-        config.useSingleServer().setAddress("redis://192.168.77.130:6379");
+        config.useSingleServer().setAddress("redis://39.105.108.186:6379");
 
         //2、根据Config创建出RedissonClient实例
         //Redis url should start with redis:// or rediss://

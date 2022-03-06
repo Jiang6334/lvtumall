@@ -3,7 +3,7 @@ package com.future.lvtumall.order.constant;
 /**
  * @Description:
  * @Created: with IntelliJ IDEA.
- * @author: 夏沫止水
+ * @author: aya
  * @createTime: 2020-07-08 23:35
  **/
 public class PayConstant {
