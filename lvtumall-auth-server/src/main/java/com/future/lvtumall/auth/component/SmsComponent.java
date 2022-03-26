@@ -1,21 +1,13 @@
-package com.future.lvtumall.thirdparty.component;
+package com.future.lvtumall.auth.component;
 
 import com.future.common.utils.HttpUtils;
 import lombok.Data;
 import org.apache.http.HttpResponse;
-import org.apache.http.util.EntityUtils;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 
 import java.util.HashMap;
 import java.util.Map;
-
-/**
- * @Description:
- * @Created: with IntelliJ IDEA.
- * @author: aya
- * @createTime: 2020-06-27 09:39
- **/
 
 @ConfigurationProperties(prefix = "spring.cloud.alicloud.sms")
 @Data
@@ -28,7 +20,6 @@ public class SmsComponent {
     private String smsSignId;
     private String appcode;
 
-    //  TODO 这边远程服务用不了啦
     public void sendCode(String phone, String code) {
         String method = "POST";
         Map<String, String> headers = new HashMap<String, String>();
@@ -60,6 +51,5 @@ public class SmsComponent {
             e.printStackTrace();
         }
     }
-
 
 }

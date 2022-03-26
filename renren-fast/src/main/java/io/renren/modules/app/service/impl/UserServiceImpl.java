@@ -25,13 +25,13 @@ import org.springframework.stereotype.Service;
 public class UserServiceImpl extends ServiceImpl<UserDao, UserEntity> implements UserService {
 
 	@Override
-	public UserEntity queryByMobile(String mobile) {
-		return baseMapper.selectOne(new QueryWrapper<UserEntity>().eq("mobile", mobile));
+	public UserEntity queryByPhone(String phone) {
+		return baseMapper.selectOne(new QueryWrapper<UserEntity>().eq("phone", phone));
 	}
 
 	@Override
 	public long login(LoginForm form) {
-		UserEntity user = queryByMobile(form.getMobile());
+		UserEntity user = queryByPhone(form.getPhone());
 		Assert.isNull(user, "手机号或密码错误");
 
 		//密码错误

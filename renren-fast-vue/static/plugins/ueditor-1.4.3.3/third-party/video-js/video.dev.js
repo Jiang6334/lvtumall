@@ -2105,7 +2105,7 @@ vjs.Component.prototype.onResize;
  * This is used to support toggling the controls through a tap on the video.
  *
  * We're requireing them to be enabled because otherwise every component would
- * have this extra overhead unnecessarily, on mobile devices where extra
+ * have this extra overhead unnecessarily, on phone devices where extra
  * overhead is especially bad.
  * @private
  */
@@ -3485,7 +3485,7 @@ vjs.Player.prototype.supportsFullScreen = function(){ return this.techGet('suppo
  * "full window mode", where the video fills the browser window.
  * In browsers and devices that support native full screen, sometimes the
  * browser's default controls will be shown, and not the Video.js custom skin.
- * This includes most mobile devices (iOS, Android) and older versions of
+ * This includes most phone devices (iOS, Android) and older versions of
  * Safari.
  *
  * @return {vjs.Player} self
@@ -4899,7 +4899,7 @@ vjs.MediaTechController = vjs.Component.extend({
 /**
  * Set up click and touch listeners for the playback element
  * On desktops, a click on the video itself will toggle playback,
- * on a mobile device a click on the video toggles controls.
+ * on a phone device a click on the video toggles controls.
  * (toggling controls is done by toggling the user state between active and
  * inactive)
  *
@@ -5100,7 +5100,7 @@ vjs.Html5 = vjs.MediaTechController.extend({
     }
 
     // Determine if native controls should be used
-    // Our goal should be to get the custom controls on mobile solid everywhere
+    // Our goal should be to get the custom controls on phone solid everywhere
     // so we can remove this all together. Right now this will block custom
     // controls on touch enabled laptops like the Chrome Pixel
     if (vjs.TOUCH_ENABLED && player.options()['nativeControlsForTouch'] !== false) {

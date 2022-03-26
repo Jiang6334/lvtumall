@@ -5,6 +5,7 @@ import com.future.common.constant.AuthServerConstant;
 import com.future.common.exception.BizCodeEnum;
 import com.future.common.utils.R;
 import com.future.common.vo.MemberResponseVo;
+import com.future.lvtumall.auth.component.SmsComponent;
 import com.future.lvtumall.auth.feign.MemberFeignService;
 import com.future.lvtumall.auth.feign.ThirdPartFeignService;
 import com.future.lvtumall.auth.vo.UserLoginVo;
@@ -50,6 +51,9 @@ public class LoginController {
     @Autowired
     private StringRedisTemplate stringRedisTemplate;
 
+    @Autowired
+    private SmsComponent smsComponent;
+
     @ResponseBody
     @GetMapping(value = "/sms/sendCode")
     public R sendCode(@RequestParam("phone") String phone) {
@@ -66,15 +70,18 @@ public class LoginController {
         }
 
         //2、验证码的再次效验 redis.存key-phone,value-code
-        int code = (int) ((Math.random() * 9 + 1) * 100000);
-        String codeNum = String.valueOf(code);
-        String redisStorage = codeNum + "_" + System.currentTimeMillis();
+        int codes = (int) ((Math.random() * 9 + 1) * 100000);
+        String code = String.valueOf(codes);
+        String redisStorage = code + "_" + System.currentTimeMillis();
 
         //存入redis，防止同一个手机号在60秒内再次发送验证码
         stringRedisTemplate.opsForValue().set(AuthServerConstant.SMS_CODE_CACHE_PREFIX+phone,
                 redisStorage,10, TimeUnit.MINUTES);
 
-        thirdPartFeignService.sendCode(phone, codeNum);
+//        thirdPartFeignService.sendCode(phone, code);
+        System.out.println("code = " + code);
+//        smsComponent.sendCode(phone, code);
+
 
         return R.ok();
     }
@@ -101,10 +108,8 @@ public class LoginController {
             //效验出错回到注册页面
             return "redirect:http://auth.lvtumall.com/reg.html";
         }
-
         //1、效验验证码
         String code = vos.getCode();
-
         //获取存入Redis里的验证码
         String redisCode = stringRedisTemplate.opsForValue().get(AuthServerConstant.SMS_CODE_CACHE_PREFIX + vos.getPhone());
         if (!StringUtils.isEmpty(redisCode)) {
@@ -124,8 +129,6 @@ public class LoginController {
                     attributes.addFlashAttribute("errors",errors);
                     return "redirect:http://auth.lvtumall.com/reg.html";
                 }
-
-
             } else {
                 //效验出错回到注册页面
                 Map<String, String> errors = new HashMap<>();

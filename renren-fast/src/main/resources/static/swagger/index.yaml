@@ -1081,7 +1081,7 @@ definitions:
       email:
         description: 邮箱
         type: string
-      mobile:
+      phone:
         description: 手机号
         type: string
       status:
@@ -1148,7 +1148,7 @@ definitions:
         email:
           description: 邮箱
           type: string
-        mobile:
+        phone:
           description: 手机号
           type: string
         status:

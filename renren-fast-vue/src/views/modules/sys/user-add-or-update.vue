@@ -16,8 +16,8 @@
       <el-form-item label="邮箱" prop="email">
         <el-input v-model="dataForm.email" placeholder="邮箱"></el-input>
       </el-form-item>
-      <el-form-item label="手机号" prop="mobile">
-        <el-input v-model="dataForm.mobile" placeholder="手机号"></el-input>
+      <el-form-item label="手机号" prop="phone">
+        <el-input v-model="dataForm.phone" placeholder="手机号"></el-input>
       </el-form-item>
       <el-form-item label="角色" size="mini" prop="roleIdList">
         <el-checkbox-group v-model="dataForm.roleIdList">
@@ -39,7 +39,7 @@
 </template>
 
 <script>
-  import { isEmail, isMobile } from '@/utils/validate'
+  import { isEmail, isPhone } from '@/utils/validate'
   export default {
     data () {
       var validatePassword = (rule, value, callback) => {
@@ -65,8 +65,8 @@
           callback()
         }
       }
-      var validateMobile = (rule, value, callback) => {
-        if (!isMobile(value)) {
+      var validatePhone = (rule, value, callback) => {
+        if (!isPhone(value)) {
           callback(new Error('手机号格式错误'))
         } else {
           callback()
@@ -82,7 +82,7 @@
           comfirmPassword: '',
           salt: '',
           email: '',
-          mobile: '',
+          phone: '',
           roleIdList: [],
           status: 1
         },
@@ -100,9 +100,9 @@
             { required: true, message: '邮箱不能为空', trigger: 'blur' },
             { validator: validateEmail, trigger: 'blur' }
           ],
-          mobile: [
+          phone: [
             { required: true, message: '手机号不能为空', trigger: 'blur' },
-            { validator: validateMobile, trigger: 'blur' }
+            { validator: validatePhone, trigger: 'blur' }
           ]
         }
       }
@@ -132,7 +132,7 @@
                 this.dataForm.userName = data.user.username
                 this.dataForm.salt = data.user.salt
                 this.dataForm.email = data.user.email
-                this.dataForm.mobile = data.user.mobile
+                this.dataForm.phone = data.user.phone
                 this.dataForm.roleIdList = data.user.roleIdList
                 this.dataForm.status = data.user.status
               }
@@ -153,7 +153,7 @@
                 'password': this.dataForm.password,
                 'salt': this.dataForm.salt,
                 'email': this.dataForm.email,
-                'mobile': this.dataForm.mobile,
+                'phone': this.dataForm.phone,
                 'status': this.dataForm.status,
                 'roleIdList': this.dataForm.roleIdList
               })

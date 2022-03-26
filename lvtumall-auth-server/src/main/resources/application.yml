@@ -17,6 +17,13 @@ spring:
       transport:
         #配置sentinel dashboard地址
         dashboard: 39.105.108.186:8858
+    alicloud:
+      sms:
+        host: https://gyytz.market.alicloudapi.com
+        path: /sms/smsSend
+        templateId: 908e94ccf08b4476ba6c876d13f084ad
+        smsSignId: 2e65b1bb3d054466b82f0c9d125465e2
+        appcode: 7438617c5b404226bda011152e580c6c
 
   redis:
     host: 39.105.108.186

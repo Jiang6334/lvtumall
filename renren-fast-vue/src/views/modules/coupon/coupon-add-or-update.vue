@@ -158,7 +158,8 @@ export default {
         ],
         enableStartTime: [
           {
-            required: true,
+            // todo 页面填写还是报错，暂时修改为开始日期可以为空，以后解决
+            required: false,
             message: "可以领取的开始日期不能为空",
             trigger: "blur"
           }

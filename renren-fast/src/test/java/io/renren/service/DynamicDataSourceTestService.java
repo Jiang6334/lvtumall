@@ -30,7 +30,7 @@ public class DynamicDataSourceTestService {
     public void updateUser(Long id){
         SysUserEntity user = new SysUserEntity();
         user.setUserId(id);
-        user.setMobile("13500000000");
+        user.setPhone("13500000000");
         sysUserDao.updateById(user);
     }
 
@@ -39,7 +39,7 @@ public class DynamicDataSourceTestService {
     public void updateUserBySlave1(Long id){
         SysUserEntity user = new SysUserEntity();
         user.setUserId(id);
-        user.setMobile("13500000001");
+        user.setPhone("13500000001");
         sysUserDao.updateById(user);
     }
 
@@ -48,7 +48,7 @@ public class DynamicDataSourceTestService {
     public void updateUserBySlave2(Long id){
         SysUserEntity user = new SysUserEntity();
         user.setUserId(id);
-        user.setMobile("13500000002");
+        user.setPhone("13500000002");
         sysUserDao.updateById(user);
 
         //测试事物

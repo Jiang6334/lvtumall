@@ -38,7 +38,7 @@ public class UserEntity implements Serializable {
 	/**
 	 * 手机号
 	 */
-	private String mobile;
+	private String phone;
 	/**
 	 * 密码
 	 */

@@ -42,7 +42,7 @@
         label="邮箱">
       </el-table-column>
       <el-table-column
-        prop="mobile"
+        prop="phone"
         header-align="center"
         align="center"
         label="手机号">

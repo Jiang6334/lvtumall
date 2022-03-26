@@ -6,6 +6,6 @@ spring:
     nacos:
       config:
         server-addr: 39.105.108.186:8848
-        namespace: a758f750-9a5e-4159-a669-94f2f6f3ba22
+        namespace: 85e63d31-847b-42ca-8f1e-bf089fd41151
 
 

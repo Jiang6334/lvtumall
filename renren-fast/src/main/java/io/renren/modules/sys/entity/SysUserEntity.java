@@ -64,7 +64,7 @@ public class SysUserEntity implements Serializable {
 	/**
 	 * 手机号
 	 */
-	private String mobile;
+	private String phone;
 
 	/**
 	 * 状态  0：禁用   1：正常

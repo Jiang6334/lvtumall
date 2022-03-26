@@ -1,5 +1,5 @@
 server:
-  port: 10000
+  port: 10001
   servlet:
     session:
       timeout: 30m
@@ -10,7 +10,7 @@ spring:
   datasource:
     username: root
     password: root
-    url: jdbc:mysql://39.105.108.186:3306/lvtumall_pms?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    url: jdbc:mysql://47.93.103.176:3306/lvtumall_pms?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
     driver-class-name: com.mysql.cj.jdbc.Driver
 
   cloud:

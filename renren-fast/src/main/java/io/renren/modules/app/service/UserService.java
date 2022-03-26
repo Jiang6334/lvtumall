@@ -20,7 +20,7 @@ import io.renren.modules.app.form.LoginForm;
  */
 public interface UserService extends IService<UserEntity> {
 
-	UserEntity queryByMobile(String mobile);
+	UserEntity queryByPhone(String phone);
 
 	/**
 	 * 用户登录

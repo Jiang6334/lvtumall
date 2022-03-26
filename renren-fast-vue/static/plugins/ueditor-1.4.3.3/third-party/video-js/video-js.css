@@ -410,8 +410,8 @@ easily in the skin designer. http://designer.videojs.com/
 .vjs-default-skin.vjs-has-started .vjs-big-play-button {
   display: none;
 }
-/* Hide on mobile devices. Remove when we stop using native controls
-    by default on mobile  */
+/* Hide on phone devices. Remove when we stop using native controls
+    by default on phone  */
 .vjs-default-skin.vjs-using-native-controls .vjs-big-play-button {
   display: none;
 }

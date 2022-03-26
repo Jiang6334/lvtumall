@@ -42,8 +42,8 @@ var CodeMirror = (function() {
             lineSpace = gutter.nextSibling.firstChild, measure = lineSpace.firstChild,
             cursor = measure.nextSibling, lineDiv = cursor.nextSibling;
         themeChanged();
-        // Needed to hide big blue blinking cursor on Mobile Safari
-        if (/AppleWebKit/.test(navigator.userAgent) && /Mobile\/\w+/.test(navigator.userAgent)) input.style.width = "0px";
+        // Needed to hide big blue blinking cursor on Phone Safari
+        if (/AppleWebKit/.test(navigator.userAgent) && /Phone\/\w+/.test(navigator.userAgent)) input.style.width = "0px";
         if (!webkit) lineSpace.draggable = true;
         if (options.tabindex != null) input.tabIndex = options.tabindex;
         if (!options.gutter && !options.lineNumbers) gutter.style.display = "none";

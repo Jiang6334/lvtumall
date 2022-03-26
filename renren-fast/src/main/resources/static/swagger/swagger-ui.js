@@ -16568,7 +16568,7 @@ function initCloneByTag(object, tag, isDeep) {
     case float32Tag: case float64Tag:
     case int8Tag: case int16Tag: case int32Tag:
     case uint8Tag: case uint8ClampedTag: case uint16Tag: case uint32Tag:
-      // Safari 5 mobile incorrectly has `Object` as the constructor of typed arrays.
+      // Safari 5 phone incorrectly has `Object` as the constructor of typed arrays.
       if (Ctor instanceof Ctor) {
         Ctor = ctorByTag[tag];
       }

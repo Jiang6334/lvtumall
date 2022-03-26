@@ -1,6 +1,6 @@
 spring:
   application:
-    name: lvtumall-coupon
+    name: lvtumall-gateway
   cloud:
     nacos:
       discovery:
