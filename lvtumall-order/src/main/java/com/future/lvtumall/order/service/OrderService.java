@@ -79,5 +79,7 @@ public interface OrderService extends IService<OrderEntity> {
      * @param orderTo
      */
     void createSeckillOrder(SeckillOrderTo orderTo);
+
+    void deleteByOrderId(String id);
 }
 

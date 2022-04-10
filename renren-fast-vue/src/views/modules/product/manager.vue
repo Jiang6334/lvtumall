@@ -55,9 +55,9 @@
       <el-table-column prop="price" header-align="center" align="center" label="价格"></el-table-column>
       <el-table-column prop="saleCount" header-align="center" align="center" label="销量"></el-table-column>
       <el-table-column fixed="right" header-align="center" align="center" width="150" label="操作">
-        <template slot-scope="scope">
-          <el-button type="text" size="small" @click="previewHandle(scope.row.skuId)">预览</el-button>
-          <el-button type="text" size="small" @click="commentHandle(scope.row.skuId)">评论</el-button>
+        <!-- <template slot-scope="scope"> -->
+          <!-- <el-button type="text" size="small" @click="previewHandle(scope.row.skuId)">预览</el-button> -->
+          <!-- <el-button type="text" size="small" @click="commentHandle(scope.row.skuId)">评论</el-button>
           <el-dropdown
             @command="handleCommand(scope.row,$event)"
             size="small"
@@ -75,7 +75,7 @@
               <el-dropdown-item command="couponSettings">优惠劵</el-dropdown-item>
             </el-dropdown-menu>
           </el-dropdown>
-        </template>
+        </template> -->
       </el-table-column>
     </el-table>
     <el-pagination

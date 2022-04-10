@@ -669,7 +669,7 @@ INSERT INTO `pms_category` VALUES ('530', '上门安装', '61', '3', '1', '0', n
 INSERT INTO `pms_category` VALUES ('531', '延保服务', '61', '3', '1', '0', null, null, '0');
 INSERT INTO `pms_category` VALUES ('532', '维修保养', '61', '3', '1', '0', null, null, '0');
 INSERT INTO `pms_category` VALUES ('533', '电脑软件', '61', '3', '1', '0', null, null, '0');
-INSERT INTO `pms_category` VALUES ('534', '京东服务', '61', '3', '1', '0', null, null, '0');
+INSERT INTO `pms_category` VALUES ('534', '商城服务', '61', '3', '1', '0', null, null, '0');
 INSERT INTO `pms_category` VALUES ('535', '炒锅', '62', '3', '1', '0', null, null, '0');
 INSERT INTO `pms_category` VALUES ('536', '煎锅', '62', '3', '1', '0', null, null, '0');
 INSERT INTO `pms_category` VALUES ('537', '压力锅', '62', '3', '1', '0', null, null, '0');
@@ -1058,10 +1058,10 @@ INSERT INTO `pms_category` VALUES ('919', '创意礼品', '97', '3', '1', '0', n
 INSERT INTO `pms_category` VALUES ('920', '礼盒礼券', '97', '3', '1', '0', null, null, '0');
 INSERT INTO `pms_category` VALUES ('921', '鲜花绿植', '97', '3', '1', '0', null, null, '0');
 INSERT INTO `pms_category` VALUES ('922', '婚庆节庆', '97', '3', '1', '0', null, null, '0');
-INSERT INTO `pms_category` VALUES ('923', '京东卡', '97', '3', '1', '0', null, null, '0');
+INSERT INTO `pms_category` VALUES ('923', '商城卡', '97', '3', '1', '0', null, null, '0');
 INSERT INTO `pms_category` VALUES ('924', '美妆礼品', '97', '3', '1', '0', null, null, '0');
 INSERT INTO `pms_category` VALUES ('925', '礼品定制', '97', '3', '1', '0', null, null, '0');
-INSERT INTO `pms_category` VALUES ('926', '京东福卡', '97', '3', '1', '0', null, null, '0');
+INSERT INTO `pms_category` VALUES ('926', '商城福卡', '97', '3', '1', '0', null, null, '0');
 INSERT INTO `pms_category` VALUES ('927', '古董文玩', '97', '3', '1', '0', null, null, '0');
 INSERT INTO `pms_category` VALUES ('928', '箱包', '98', '3', '1', '0', null, null, '0');
 INSERT INTO `pms_category` VALUES ('929', '钱包', '98', '3', '1', '0', null, null, '0');

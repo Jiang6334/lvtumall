@@ -106,4 +106,12 @@ public class OrderController {
         return R.ok();
     }
 
+    @RequestMapping("/deleteByOrderId/{id}")
+    //@RequiresPermissions("order:order:delete")
+    public R deleteByOrderId(@PathVariable("id") String id){
+        orderService.deleteByOrderId(id);
+
+        return R.ok();
+    }
+
 }

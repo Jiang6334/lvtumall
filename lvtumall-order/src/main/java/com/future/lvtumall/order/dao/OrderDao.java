@@ -24,4 +24,6 @@ public interface OrderDao extends BaseMapper<OrderEntity> {
     void updateOrderStatus(@Param("orderSn") String orderSn,
                            @Param("code") Integer code,
                            @Param("payType") Integer payType);
+
+    void delOrderById(@Param("orderSn") String orderSn);
 }

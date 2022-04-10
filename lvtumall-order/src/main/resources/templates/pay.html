@@ -9,16 +9,17 @@
 	<body>
     <div class="One_Jdbox">
       <div class="Jdbox_head">
-        <img src="/static/order/pay/img/logo1.jpg" alt=""><span class="bank">收银台</span>
+        <img src="/static/order/pay/img/my_logo1.jpg" alt="">
+        <span class="bank">收银台</span>
         <ul>
           <li><span>[[${session.loginUser.nickname}]]</span><span>退出</span></li>
           <li><a href="http://order.lvtumall.com/list.html">我的订单</a></li>
-          <li>支付帮助</li>
+<!--          <li>支付帮助</li>-->
         </ul>
       </div>
       <div class="Jdbox_BuySuc">
         <dl>
-          <dt><img src="/static/order/pay/img/saoyisao.png" alt=""></dt>
+<!--          <dt><img src="/static/order/pay/img/saoyisao.png" alt=""></dt>-->
           <dd>
             <span>订单提交成功，请尽快付款！订单号：[[${submitOrderResp.order.orderSn}]]</span>
             <span>应付金额<font>[[${#numbers.formatDecimal(submitOrderResp.order.payAmount,1,2)}]]</font>元</span>
@@ -32,88 +33,88 @@
       </div>
       <div class="Jd_Con">
         <p class="JdCon_title"><img src="/static/order/pay/img/title.png" alt=""></p>
-        <div class="Jd_Fenqi">
-          <ul>
-            <li><img src="/static/order/pay/img/BAITIAO_2.0.png" alt="">打白条</li>
-            <li>
-              <span>可用额度 7275.38元</span>
-              <span>白条还款日 2018-01-27</span>
-              <span><font>优惠</font>随机立减(最高10元)</span>
-            </li>
-            <li>支付<font>28.90</font>元</li>
-          </ul>
-          <ol>
-            <li>
-              <p>不分期</p>
-              <p>0服务费</p>
-            </li>
-            <li>
-              <p>3期</p>
-              <p>9.48元/期</p>
-            </li>
-            <li>
-              <p>6期</p>
-              <p>4.94元/期</p>
-            </li>
-            <li>
-              <p>12期</p>
-              <p>2.35元/期</p>
-            </li>
-            <li>
-              <p>24期</p>
-              <p>1.44元/期</p>
-            </li>
-          </ol>
-        </div>
-        <div class="Jd_main">
-          <ul>
-            <li>
-              <span>
-                <img src="/static/order/pay/img/XJKCONSUME.png" alt="">旅途学院小金库
-              </span>
-              <span>未开通小金库</span>
-            </li>
-            <li>
-              <span>
-                <img src="/static/order/pay/img/CMB.png" alt="">招商银行
-              </span>
-              <span>信用卡(4337)</span>
-              <span><font>优惠</font>单单减最高99元</span>
-            </li>
-            <li>
-              <button>更多付款方式</button>
-              <button>添加新卡/网银支付</button>
-            </li>
-            <li>
-              <p>请输入6位数字支付密码</p>
-              <input type="password"><span>忘记支付密码？</span>
-            </li>
-            <li>
-              <button>立即支付</button>
-            </li>
-          </ul>
-        </div>
+<!--        <div class="Jd_Fenqi">-->
+<!--&lt;!&ndash;          <ul>&ndash;&gt;-->
+<!--&lt;!&ndash;            <li><img src="/static/order/pay/img/BAITIAO_2.0.png" alt="">打白条</li>&ndash;&gt;-->
+<!--&lt;!&ndash;            <li>&ndash;&gt;-->
+<!--&lt;!&ndash;              <span>可用额度 7275.38元</span>&ndash;&gt;-->
+<!--&lt;!&ndash;              <span>白条还款日 2018-01-27</span>&ndash;&gt;-->
+<!--&lt;!&ndash;              <span><font>优惠</font>随机立减(最高10元)</span>&ndash;&gt;-->
+<!--&lt;!&ndash;            </li>&ndash;&gt;-->
+<!--&lt;!&ndash;            <li>支付<font>28.90</font>元</li>&ndash;&gt;-->
+<!--&lt;!&ndash;          </ul>&ndash;&gt;-->
+<!--&lt;!&ndash;          <ol>&ndash;&gt;-->
+<!--&lt;!&ndash;            <li>&ndash;&gt;-->
+<!--&lt;!&ndash;              <p>不分期</p>&ndash;&gt;-->
+<!--&lt;!&ndash;              <p>0服务费</p>&ndash;&gt;-->
+<!--&lt;!&ndash;            </li>&ndash;&gt;-->
+<!--&lt;!&ndash;            <li>&ndash;&gt;-->
+<!--&lt;!&ndash;              <p>3期</p>&ndash;&gt;-->
+<!--&lt;!&ndash;              <p>9.48元/期</p>&ndash;&gt;-->
+<!--&lt;!&ndash;            </li>&ndash;&gt;-->
+<!--&lt;!&ndash;            <li>&ndash;&gt;-->
+<!--&lt;!&ndash;              <p>6期</p>&ndash;&gt;-->
+<!--&lt;!&ndash;              <p>4.94元/期</p>&ndash;&gt;-->
+<!--&lt;!&ndash;            </li>&ndash;&gt;-->
+<!--&lt;!&ndash;            <li>&ndash;&gt;-->
+<!--&lt;!&ndash;              <p>12期</p>&ndash;&gt;-->
+<!--&lt;!&ndash;              <p>2.35元/期</p>&ndash;&gt;-->
+<!--&lt;!&ndash;            </li>&ndash;&gt;-->
+<!--&lt;!&ndash;            <li>&ndash;&gt;-->
+<!--&lt;!&ndash;              <p>24期</p>&ndash;&gt;-->
+<!--&lt;!&ndash;              <p>1.44元/期</p>&ndash;&gt;-->
+<!--&lt;!&ndash;            </li>&ndash;&gt;-->
+<!--&lt;!&ndash;          </ol>&ndash;&gt;-->
+<!--        </div>-->
+<!--        <div class="Jd_main">-->
+<!--          <ul>-->
+<!--            <li>-->
+<!--              <span>-->
+<!--                <img src="/static/order/pay/img/XJKCONSUME.png" alt="">旅途学院小金库-->
+<!--              </span>-->
+<!--              <span>未开通小金库</span>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--              <span>-->
+<!--                <img src="/static/order/pay/img/CMB.png" alt="">招商银行-->
+<!--              </span>-->
+<!--              <span>信用卡(4337)</span>-->
+<!--              <span><font>优惠</font>单单减最高99元</span>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--              <button>更多付款方式</button>-->
+<!--              <button>添加新卡/网银支付</button>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--              <p>请输入6位数字支付密码</p>-->
+<!--              <input type="password"><span>忘记支付密码？</span>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--              <button>立即支付</button>-->
+<!--            </li>-->
+<!--          </ul>-->
+<!--        </div>-->
       </div>
       <div class="Jd_footer">
         <ul>
-          <li>
-            <img src="/static/order/pay/img/weixin.png" alt="">
-            <a th:href="'http://order.lvtumall.com/weixinPayOrder?orderSn='+${submitOrderResp.order.orderSn}">微信支付</a>
-          </li>
+<!--          <li>-->
+<!--            <img src="/static/order/pay/img/weixin.png" alt="">-->
+<!--            <a th:href="'http://order.lvtumall.com/weixinPayOrder?orderSn='+${submitOrderResp.order.orderSn}">微信支付</a>-->
+<!--          </li>-->
 		  <li>
             <img src="/static/order/pay/img/zhifubao.png" style="weight:auto;height:30px;" alt="">
             <a th:href="'http://order.lvtumall.com/aliPayOrder?orderSn='+${submitOrderResp.order.orderSn}">支付宝</a>
           </li>
         </ul>
       </div>
-      <div class="Jd_foots">
-        <p>
-          <span>Copyright @2004-2017 旅途学院lvtumall.com 版权所有</span>
-          <span>
-            <img src="/static/order/pay/img/foots.png" alt="">
-          </span>
-        </p>
-      </div>
+<!--      <div class="Jd_foots">-->
+<!--        <p>-->
+<!--          <span>Copyright @2004-2017 旅途学院lvtumall.com 版权所有</span>-->
+<!--          <span>-->
+<!--            <img src="/static/order/pay/img/foots.png" alt="">-->
+<!--          </span>-->
+<!--        </p>-->
+<!--      </div>-->
     </div>
 	</body>
   <script type="text/javascript">

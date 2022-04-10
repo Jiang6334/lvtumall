@@ -712,6 +712,15 @@ public class OrderServiceImpl extends ServiceImpl<OrderDao, OrderEntity> impleme
         orderItemService.save(orderItem);
     }
 
+    @Autowired
+    OrderDao orderDao;
+
+    @Override
+    public void deleteByOrderId(String id) {
+        // 删除订单
+        orderDao.delOrderById(id);
+    }
+
 
     public static void main(String[] args) {
         String orderSn = IdWorker.getTimeId().substring(0,16);
